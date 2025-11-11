@@ -24,6 +24,6 @@ public class If {
         }
 
         System.out.print("Fim!");
-        teclado.close();
+        teclado.close();  //fechando o teclado o finalizar a aplicação
     }
 }

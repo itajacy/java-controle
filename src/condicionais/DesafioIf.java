@@ -7,7 +7,12 @@ public class DesafioIf {
         boolean tenhoDinheiro = true;
         boolean estaComSol = false;
 
-        if(tenhoDinheiro && estaComSol); {
+
+        if(tenhoDinheiro && estaComSol)
+
+            ; // sentença de código vazia
+
+        {
             System.out.println(
                     "Vou para o shopping!");
         }
