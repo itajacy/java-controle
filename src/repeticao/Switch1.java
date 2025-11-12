@@ -4,11 +4,12 @@ package repeticao;
 public class Switch1 {
 
     static void main() {
-        int idade = 7;
+        int idade = 3;
 
         switch (idade) {
             case 3:
                 System.out.println("Sabe Java");
+//                break;
             case 2:
                 System.out.println("Sabe falar");
             case 1:
