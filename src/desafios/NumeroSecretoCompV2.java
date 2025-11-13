@@ -7,7 +7,7 @@ public class NumeroSecretoCompV2 {
         Scanner teclado = new Scanner(System.in);
 
         int minimo = 0;
-        int maximo = 10000;
+        int maximo = 100;
 
         System.out.printf("Informe o valor secreto (%d-%d): ", minimo, maximo - 1);
         int secreto = teclado.nextInt();

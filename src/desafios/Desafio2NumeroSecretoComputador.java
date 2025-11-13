@@ -8,21 +8,25 @@ public class Desafio2NumeroSecretoComputador {
         System.out.print("chute um número entre 0 e 100: ");
         int numero = teclado.nextInt();
 
-        int chuteComp = -1;
-        int ultimoChute = chuteComp;
-        int tentativa =0;
-        while (chuteComp != numero ) {
-            ultimoChute = chuteComp;
-            if (chuteComp > numero) {  // numero é menor
-                chuteComp = chuteComp/2 ;
-            } else {
+        int min = 0;
+        int max = 100;
 
-                chuteComp =  chuteComp+((ultimoChute - chuteComp)/2);
+        int chute = -1;
+        int tentativas = 0;
+        while (chute != numero) {
+            chute = (max - min) / 2 + min;
+            tentativas++;
+            if (chute > numero) {  // numero é menor
+                max = chute;
+            } else {
+                min = chute;
+//
             }
-            System.out.println("Chute.. " + chuteComp);
-            System.out.println("TChute.. " + chuteComp);
+            System.out.printf("Chute.. %d  Min: %d  Max: %d ", chute, min, max);
+            System.out.println();
 
         }
-        System.out.printf("O número secreto é %d ",chuteComp);
+        System.out.println("tentativas.. " + tentativas);
+        System.out.printf("O número secreto é %d ", chute);
     }
 }
